@@ -1,0 +1,250 @@
+/* CSS Reset*/
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,simsun;color:#333;outline:0;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+p { 
+	text-indent: 2em;
+}
+
+#header {
+	position: relative;
+	width: 100%;
+	min-width: 980px;
+	height: 80px;
+	background: #039f4f;
+}
+
+#header .nav a {
+	font: 14px/38px SimSun, serif;
+	color: #fff;
+}
+#header .nav li {
+	margin-left: 28px;
+	height: 38px;
+	float: left;
+}
+#header .nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.wrap { 
+	position: relative;
+	width: 980px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#header .wrap img {
+	position: absolute;
+	bottom: 0;
+}
+
+#header .git-icon{
+	/*display: block;*/
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+	width: 30px;
+	height: 34px;
+	background: url(../img/icon.png);
+
+}
+@media screen and (max-width:960px){
+	#header .git-icon{
+		display: none;
+	}
+}
+
+.banner {
+	width: 100%;
+	min-width: 980px;
+	height: 426px;
+	background: url(../img/banner.jpg);
+	background-size: 100% 426px;
+}
+
+.banner .descript {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 320px;
+	height: 100px;
+	padding: 10px 10px 30px;
+
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .5) 75%, rgba(255, 255, 255, 0) 100%);
+    background-image:      -o-linear-gradient(rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .5) 75%, rgba(255, 255, 255, 0) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, .7) 0, rgba(255, 255, 255, .5) 75%, rgba(255, 255, 255, 0) 100%);
+    background-image:         linear-gradient(to bottom, rgba(255, 255, 255, .7) 0, rgba(255, 255, 255, .5) 75%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3ffffff', endColorstr='#00ffffff', GradientType=0);
+}
+
+.banner .descript h2 {
+	float: right;
+	margin-bottom: 9px;
+	font: 14px/14px SimSun, serif;
+}
+.banner .descript p {
+	clear: right;
+	font: 12px/1.5 SimSun, serif;
+}
+
+.figure {
+	width: 100%;
+	min-width: 980px;
+	background: #eee;
+	padding-top: 10px;
+	padding-bottom: 110px;
+}
+
+.figure li {
+	float: left;
+	width: 300px;
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: -10000px;
+	padding-bottom: 10000px;
+	background: #fff;
+}
+
+.figure li:last-child {
+	height: 100%;
+	margin-right: 0;
+}
+
+.figure .wrap {
+	display: flex;
+	display: -webkit-flex;
+	display:     -ms-flex;
+	overflow: hidden;
+}
+
+.figure p {
+	font: 12px/1.7 SumSun, serif;
+}
+
+.figure img {
+	margin-bottom: 10px;
+}
+
+.figurecaption {
+	margin: 0 20px 10px;
+}
+
+.introduct {
+	height: 426px;
+}
+.introduct img {
+	display: block;
+	margin: -50px auto 6px;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+}
+
+.introduct .text {
+	margin: 0 auto;
+	width: 600px;
+}
+
+.introduct h2 {
+	font: 20px/108px "Century Gothic", serif;
+	text-align: center;
+}
+.introduct p {
+	font: 14px/25px SumSun, serif;
+}
+
+#footer {
+	width:100%;
+	min-width: 980px;
+	background: #000;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#footer .nav {
+	text-align: center;
+	white-space: nowrap;
+	border-bottom: 1px solid #333;
+	height: 36px;
+}
+#footer .nav li {
+	display: inline-block;
+	margin-right: 25px;
+}
+#footer .nav li:last-child {
+	margin-right: 0;
+}
+
+#footer .nav li a {
+	font: 12px/36px SumSun, serif;
+}
+
+#footer .links>li {
+	float: left;
+	width: 178px;
+	margin-right: 22px;
+}
+#footer .links > li:last-child {
+	margin-right: 0;
+}
+
+#footer .links span {
+	display: block;
+	margin: 42px 0 25px;
+	font-size: 12px/12px SumSun, serif;
+	color: #333;
+}
+
+#footer .links li a {
+	font: 8px/20px Aril, SumSun, serif;
+}
+#footer .links li a:hover {
+	text-decoration: underline;
+}
+
+#footer>span {
+	display: block;
+	text-align: center;
+	font: 12px/32px SumSun, serif;
+	color: #fff;
+}
+#footer .git-icon {
+	display: block;
+	margin: 0 auto;
+	width: 30px;
+	height:34px;
+	background: url(../img/icon.png);
+}
+
+#footer .links {
+	margin-bottom: 82px;
+}
