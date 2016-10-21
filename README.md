@@ -1,4 +1,4 @@
 # AnotherPig
 HTML/CSS
-# Rreview
+# Preview
 https://liupeilink.github.io/AnotherPig/
